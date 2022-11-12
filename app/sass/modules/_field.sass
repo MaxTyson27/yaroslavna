@@ -1,0 +1,33 @@
+.field
+  padding-top: 120px
+  text-align: center
+  margin-bottom: 100px
+  &__content
+    display: flex
+    align-items: center
+    column-gap: 50px
+    background-color: #f4f1ed
+    border-radius: 30px
+    &-text
+      font-size: 35px
+      @extend %gil
+      line-height: 50px
+      text-transform: uppercase
+      margin-bottom: 50px
+    img
+      max-height: 800px
+      border-radius: 30px
+    &-link
+      text-transform: uppercase
+      padding-right: 30px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        right: 0
+        top: 0
+        background-image: url('../images/field/arrow.svg')
+        background-repeat: no-repeat
+        background-size: contain
+        width: 12px
+        height: 18px

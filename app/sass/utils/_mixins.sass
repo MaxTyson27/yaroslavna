@@ -1,0 +1,57 @@
+=flex-center ()
+  display: flex
+  justify-content: center
+  align-items: center
+
+=font ($name, $w, $pathWoff2, $pathWoff)
+  @font-face
+    font:
+      family: $name
+      weight: $w
+      style: normal
+      display: swap
+    src: local($name), url($pathWoff2) format('woff2'), url($pathWoff) format('woff')
+
+=bgp($path, $s, $pos1, $pos2 )
+  background:
+    repeat: no-repeat
+    image: url($path)
+    size: $s
+    position: $pos1 $pos2
+
+=fz($fz, $lh)
+  font-size: $fz
+  line-height: $lh
+
+%button
+  color: #ffffff
+  font-size: 16px
+  line-height: 22px
+  border-radius: 30px
+  background-color: $btn
+  padding: 0px 40px
+  text-transform: uppercase
+  border: none
+  +flex-center
+  height: 50px
+  cursor: pointer
+
+%gil
+  font-family: 'Gilroy-Light'
+  font-weight: 300
+
+%cor
+  font-family: 'snell_Roundhand'
+  font-weight: 400
+
+%corm
+  font-family: 'Cormorant Garamond', serif
+  font-weight: 300
+
+%caption
+  font-family: 'Denistina'
+  font-weight: 400
+
+%italic
+  font-family: 'Alexandra'
+  font-weight: 400

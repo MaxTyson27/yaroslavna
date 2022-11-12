@@ -1,0 +1,16 @@
+.modal-close
+  img.modal__close-icon(src="images/modal-close.svg", alt="")
+.modal
+  .modal__inner
+    p.modal__title Записаться на консультацию
+    p.modal__text Пожалуйста, оставьте свои контактные данные в&nbsp;форме ниже, я свяжусь с вами в ближайшее время
+    form(action="#").modal__form
+      input.modal__form-input.input-name(type="text" placeholder='Имя Фамилия')
+      input.modal__form-input.input-date(type="date" placeholder='Дата рождения')
+      input.modal__form-input.input-email(type="email" placeholder='Email')
+      input.modal__form-input.input-phone(type="tel" placeholder='+7 (999) 999-99-99')
+      label.label-checkbox(for="policyModal")
+        input.checkbox(type="checkbox" id='policyModal')
+        span.fake
+        p Я даю согласие на обработку моих персональных данных и соглашаюсь с политикой конфиденциальности
+      button.modal__form-btn(type='submit') записаться

@@ -1,0 +1,11 @@
+section.advantages
+  .container
+    .advantages__inner
+      p.advantages__subtitle.subtitle достижения
+      h2.advantages__title.title мои достижения доказывают мой профессионализм
+      - let count = 1;
+      .advantages__slider
+        while count < 14
+          .advantages__slider-item
+            img(src="images/advantages/" + count + '.jpg', alt="")
+            - count++

@@ -1,0 +1,78 @@
+body
+  @extend %gil
+  font-size: 16px
+  color: $primary
+
+.wrapper
+  overflow: hidden
+  background-color: #fff
+
+.container
+  max-width: 1460px
+  padding: 0 10px
+  margin: 0 auto
+
+.subtitle
+  margin-bottom: 50px
+  text-transform: uppercase
+
+.title
+  @extend %corm
+  font-size: 60px
+  text-transform: uppercase
+  margin-bottom: 60px
+  span
+    font-size: 90px
+    line-height: 0
+
+.label-checkbox
+  cursor: pointer
+  display: flex
+  column-gap: 10px
+  p
+    max-width: 360px
+    font-size: 12px
+.checkbox
+  display: none
+  &:checked + .fake::before
+    opacity: 1
+
+.fake
+  display: block
+  width: 20px
+  height: 20px
+  border: 1px solid #b49379
+  cursor: pointer
+  position: relative
+  &::before
+    content: ''
+    left: 0
+    top: 0
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: #b49379
+    opacity: 0
+
+.slick-arrow
+  border: none
+  background-color: transparent
+  padding: 0
+  background-color: #fff
+  border-radius: 50%
+  +flex-center
+  width: 50px
+  height: 50px
+  cursor: pointer
+  position: absolute
+  bottom: -100px
+  svg
+    width: 35px
+    height: 35px
+
+.slick-prev
+  transform: rotate(180deg)
+  left: 45%
+
+.slick-next
+  right: 45%

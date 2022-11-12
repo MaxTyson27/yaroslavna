@@ -1,0 +1,27 @@
+.header
+  +bgp('../images/bg.jpg', cover, top, center)
+  height: 100vh
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 120px
+    padding-top: 10px
+  &__button
+    @extend %button
+  &__title
+    font-size: 175px
+    line-height: 120%
+    @extend %cor
+    font-weight: 400
+    margin-bottom: 50px
+    span
+      display: block
+      margin-left: 50px
+  &__text
+    font-size: 22px
+    text-transform: uppercase
+    margin-left: 60px
+.logo
+  img
+    max-width: 90px
