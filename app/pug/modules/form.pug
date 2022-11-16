@@ -7,12 +7,8 @@ section.form
         .form__box
           p.form__box-title Если у вас возникли вопросы, пожалуйста, оставьте свои контактные данные в форме, я&nbsp;свяжусь с вами в ближайшее время
           input.form__input.input-name(type="text" placeholder='Имя Фамилия')
-          input.form__input.input-date(type="date" placeholder='Дата рождения')
           input.form__input.input-email(type="email" placeholder='Email')
           input.form__input.input-phone(type="tel" placeholder='+7 (999) 999-99-99')
-          label.label-checkbox(for="policy")
-            input.checkbox(type="checkbox" id='policy')
-            span.fake
-            p Я даю согласие на обработку моих персональных данных и соглашаюсь с политикой конфиденциальности
           button.form__btn(type='submit') Оставить заявку
+          p.form__policy.policy Отправляя свои данные, вы соглашаетесь <a href='privacy.html' target='_blank'>с&nbsp;политикой&nbsp;конфиденциальности</a>
         img.form__image(src="images/form/1.jpeg", alt="")

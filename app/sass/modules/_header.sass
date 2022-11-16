@@ -6,18 +6,32 @@
     justify-content: space-between
     align-items: center
     margin-bottom: 120px
-    padding-top: 10px
+    padding-top: 20px
   &__button
     @extend %button
   &__title
     font-size: 175px
     line-height: 120%
-    @extend %cor
     font-weight: 400
     margin-bottom: 50px
+    @extend %cor
+    @extend %grad
     span
       display: block
       margin-left: 50px
+      position: relative
+      width: min-content
+      @extend %grad
+      &::before
+        content: ''
+        position: absolute
+        right: -130px
+        top: -90px
+        background-image: url('../images/header-icon.png')
+        background-repeat: no-repeat
+        background-size: cover
+        width: 180px
+        height: 180px
   &__text
     font-size: 22px
     text-transform: uppercase

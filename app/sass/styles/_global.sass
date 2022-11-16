@@ -1,5 +1,5 @@
 body
-  @extend %gil
+  @extend %gothic
   font-size: 16px
   color: $primary
 
@@ -25,34 +25,10 @@ body
     font-size: 90px
     line-height: 0
 
-.label-checkbox
-  cursor: pointer
-  display: flex
-  column-gap: 10px
-  p
-    max-width: 360px
-    font-size: 12px
-.checkbox
-  display: none
-  &:checked + .fake::before
-    opacity: 1
-
-.fake
-  display: block
-  width: 20px
-  height: 20px
-  border: 1px solid #b49379
-  cursor: pointer
-  position: relative
-  &::before
-    content: ''
-    left: 0
-    top: 0
-    position: absolute
-    width: 100%
-    height: 100%
-    background-color: #b49379
-    opacity: 0
+.policy
+  font-size: 12px
+  a
+    text-decoration: underline
 
 .slick-arrow
   border: none
